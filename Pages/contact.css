@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500&family=Yantramanav&display=swap');
+
+:root {
+    --fontFamilyNav: "Yantramanav", sans-serif;
+    --textFontFamily: 'Noto Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 17vw;
+    max-height: 200px;
+    min-height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    width: 100%;
+    height: 20vw;
+    max-height: 100px;
+    display: flex;
+    font-family: var(--fontFamilyNav);
+}
+
+.nonsocial {
+    flex: 13;
+    display: flex;
+}
+
+.social {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.instagram {
+    height: 30px;
+    width: 30px;
+    margin-left: 1.4rem;
+}
+
+.brand {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 1rem;
+    height: 80px;
+    width: 306px;
+}
+
+.links {
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links a {
+    /* text-decoration: none; */
+    color: black;
+    margin: 0 1.4rem;
+    font-size: 1.2rem;
+}
+
+.Default {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.Option {
+    text-decoration: none;
+}
+
+.Option:hover {
+    opacity: .5;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* max-height: 900px;
+    min-height: 700px; */
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0;
+}
+
+.content {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact {
+    margin-left: 20%;
+    height: auto;
+    width: 500px;
+    font-family: var(--textFontFamily);
+    font-weight: 300;
+}
+
+.outside {
+    margin: 1rem 0;
+    max-width: 100%;
+}
+
+.contact .h3 {
+    font-size: 3rem;
+}
+
+.contact .p {
+    font-size: 1rem;
+}
+
+form {
+    font-family: var(--textFontFamily);
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 1.1rem;
+    margin-bottom: .2rem;
+}
+
+.box {
+    margin-bottom: 1.13rem;
+}
+
+.FName {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+#fname,
+#lname {
+    border: 1px solid black;
+    border-radius: 1px;
+    border-color: rgba(0, 0, 0, 0.54);
+    width: 95.6%;
+    height: 2.875rem;
+}
+
+.block1 {
+    margin-right: 1rem;
+}
+
+.block2 {
+    margin-left: 1rem;
+}
+
+.last {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.instruction {
+    font-size: .8rem;
+}
+
+#email {
+    height: 2.875rem;
+    width: 100%;
+}
+
+#message {
+    width: 100%;
+    height: 6rem;
+}
+
+.submit {
+    border: none;
+    font-size: 1rem;
+    font-family: var(--textFontFamily);
+    color: #FFF;
+    background-color: rgb(238, 58, 88);
+    padding: 1.7rem;
+    max-width: 130px;
+}
+
+.footer {
+    height: 8vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    font-family: var(--fontFamilyNav);
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgb(59, 59, 59);
+    opacity: .7;
+}
+
+.left {
+    margin-left: 8rem;
+}
+
+.right {
+    margin-right: 8rem;
+}
+
+@media screen and (max-width: 1150px) {
+    .nav {
+        max-height: 70px;
+    }
+
+    .logo {
+        max-width: 315px;
+        max-height: 70px;
+    }
+
+    .links a {
+        font-size: 1.1rem;
+    }
+
+    .content {
+        justify-content: center;
+    }
+
+    .contact {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .social {
+        justify-content: center;
+    }
+
+    .instagram {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        max-height: 50px;
+    }
+
+    .instagram {
+        height: 20px;
+        width: 20px;
+    }
+
+    .logo {
+        max-width: 225px;
+        max-height: 50px;
+    }
+
+    .links a {
+        font-size: 0.9rem;
+        margin: 0 1.5%;
+    }
+}
